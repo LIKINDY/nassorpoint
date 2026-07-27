@@ -1,0 +1,16 @@
+{
+  "name": "Restaurant POS",
+  "short_name": "Nassor POS",
+  "description": "Modern Restaurant Point of Sale System",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1A56DB",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
