@@ -3,6 +3,12 @@ ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 
+if (!file_exists(__DIR__ . '/../vendor/autoload.php')) {
+    header("HTTP/1.1 500 Internal Server Error");
+    echo "<h1 style='color:red;'>CRITICAL ERROR: vendor/autoload.php is missing! Vercel did not run 'composer install'.</h1>";
+    exit;
+}
+
 $appStorage = '/tmp/storage';
 
 $dirs = [
